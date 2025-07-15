@@ -12,7 +12,7 @@ const Dashboard = () => {
     const fetchStudents = async () => {
       try {
         const response = await axios.get(
-          'http://iqrotalimapi2.pythonanywhere.com/api/users/teacher/students/',
+          'https://iqrotalimapi2.pythonanywhere.com/api/users/teacher/students/',
           { withCredentials: true }
         );
         setStudents(response.data);
